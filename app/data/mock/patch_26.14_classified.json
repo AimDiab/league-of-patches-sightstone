@@ -1,0 +1,170 @@
+{
+  "patch_version": "26.14",
+  "overall_summary": "Patch 26.14 focuses on bug fixes and rune-interaction tuning for Azir, nerfs to overperforming Jayce, Garen, Locke, Senna, and Seraphine, buffs to underperforming Mordekaiser, Nami, Corki, and Yunara, tuning to Immortal Path, Protoplasm Harness, and Hextech Rocketbelt, a Blue Buff ability haste scaling buff, a broad ARAM Mayhem augment rebalance (nerfing Dropkick, buffing several weak augments), a wide Arena champion/item/augment balance pass focused on buffing underperformers (especially Locke and Zoe), buff-bar UI cleanup plus QoL changes like automatic remake votes, and a T1 Worlds three-peat cosmetic release wave including five T1 Signature Bundles, MVP T1 Miss Fortune, Victorious Rengar, a Megabundle, a Mythic Shop Nexus Finisher, and five chromas.",
+  "changes": [
+    {"entity_name": "Azir", "entity_type": "champion", "change_type": "buff", "summary": "Scorch, Liandry's Torment, Blackfire Torch, and Hextech Alternator now deal 100% of their damage on-hit against Azir's soldiers instead of 50%."},
+    {"entity_name": "Azir", "entity_type": "champion", "change_type": "buff", "summary": "Conqueror now applies 2 stacks per on-hit instead of 1 via Arise!."},
+    {"entity_name": "Azir", "entity_type": "champion", "change_type": "buff", "summary": "Press the Attack now applies to the primary target hit by Arise!."},
+    {"entity_name": "Azir", "entity_type": "champion", "change_type": "buff", "summary": "Emperor's Divide (R) now knocks back jungle monsters."},
+
+    {"entity_name": "Corki", "entity_type": "champion", "change_type": "buff", "summary": "Attack Damage growth per level increased from 2 to 2.5."},
+    {"entity_name": "Corki", "entity_type": "champion", "change_type": "buff", "summary": "Missile Barrage (R) remaining recharge time reduction from autos increased from 2-4 seconds to 2-6 seconds based on critical strike chance."},
+
+    {"entity_name": "Garen", "entity_type": "champion", "change_type": "nerf", "summary": "Demacian Justice (R) true damage reduced from 150/250/350 to 125/200/275."},
+
+    {"entity_name": "Jayce", "entity_type": "champion", "change_type": "nerf", "summary": "Hextech Capacitor passive bonus move speed reduced from 40 to 30."},
+    {"entity_name": "Jayce", "entity_type": "champion", "change_type": "nerf", "summary": "Mercury Hammer (R) bonus Armor and Magic Resistance reduced from 5/15/25/35 to 5/12/19/26."},
+
+    {"entity_name": "Locke", "entity_type": "champion", "change_type": "nerf", "summary": "Ritual Nails (Q) recast hold time reduced from 5 to 4 seconds."},
+    {"entity_name": "Locke", "entity_type": "champion", "change_type": "nerf", "summary": "Ritual Nails (Q) nail damage reduced from 50/60/70/80/90 to 50/58/66/74/82."},
+    {"entity_name": "Locke", "entity_type": "champion", "change_type": "nerf", "summary": "Ritual Nails (Q) mark base bonus damage reduced from 20/30/40/50/60 to 18/26/34/42/50."},
+    {"entity_name": "Locke", "entity_type": "champion", "change_type": "nerf", "summary": "Soul Ignition (W) damage taken grey health cap reduced from 40/80/120/160/200 to 40/70/100/130/160."},
+
+    {"entity_name": "Mordekaiser", "entity_type": "champion", "change_type": "buff", "summary": "Death's Grasp (E) damage increased from 60/75/90/105/120 to 60/80/100/120/140 and its Ability Power ratio increased from 40% to 45%."},
+    {"entity_name": "Mordekaiser", "entity_type": "champion", "change_type": "buff", "summary": "Realm of Death (R) stat steal increased from 10% to 13%."},
+
+    {"entity_name": "Nami", "entity_type": "champion", "change_type": "buff", "summary": "Tidecaller's Blessing (E) damage per hit increased from 20/30/40/50/60 to 20/35/50/65/80."},
+
+    {"entity_name": "Senna", "entity_type": "champion", "change_type": "nerf", "summary": "Absolution passive critical strike damage modifier reduced from 85% to 80%."},
+    {"entity_name": "Senna", "entity_type": "champion", "change_type": "nerf", "summary": "Piercing Darkness (Q) Ability Power slow ratio reduced from 10% per 100 AP to 7% per 100 AP."},
+    {"entity_name": "Senna", "entity_type": "champion", "change_type": "nerf", "summary": "Piercing Darkness (Q) Ability Power healing ratio reduced from 50% to 35%."},
+
+    {"entity_name": "Seraphine", "entity_type": "champion", "change_type": "nerf", "summary": "High Note (Q) Ability Power ratio reduced from 50% to 40%."},
+
+    {"entity_name": "Yunara", "entity_type": "champion", "change_type": "buff", "summary": "Attack Damage growth per level increased from 2.5 to 3."},
+
+    {"entity_name": "Immortal Path", "entity_type": "item", "change_type": "nerf", "summary": "Bonus damage increase while above 50% max health reduced from 5% to 4%."},
+    {"entity_name": "Immortal Path", "entity_type": "item", "change_type": "nerf", "summary": "Healing, shielding, and regeneration increase while below 50% max health reduced from 15% to 12%."},
+
+    {"entity_name": "Protoplasm Harness", "entity_type": "item", "change_type": "nerf", "summary": "Cost increased from 2500 to 2600 gold."},
+    {"entity_name": "Protoplasm Harness", "entity_type": "item", "change_type": "nerf", "summary": "Bonus health range reduced from 200-300 to 100-300."},
+    {"entity_name": "Protoplasm Harness", "entity_type": "item", "change_type": "nerf", "summary": "Healing range reduced from 200-400 to 100-400."},
+
+    {"entity_name": "Hextech Rocketbelt", "entity_type": "item", "change_type": "adjustment", "summary": "Build path changed from Hextech Alternator + Fiendish Codex + Amplifying Tome + 300 gold to Hextech Alternator + Kindlegem + Ruby Crystal + 350 gold."},
+    {"entity_name": "Hextech Rocketbelt", "entity_type": "item", "change_type": "nerf", "summary": "Active ability cooldown increased from 40 to 50 seconds."},
+    {"entity_name": "Hextech Rocketbelt", "entity_type": "item", "change_type": "nerf", "summary": "Ability Power reduced from 70 to 60."},
+    {"entity_name": "Hextech Rocketbelt", "entity_type": "item", "change_type": "buff", "summary": "Health increased from 300 to 350."},
+
+    {"entity_name": "Blue Buff", "entity_type": "system", "change_type": "buff", "summary": "Ability Haste granted changed from a flat 10 to 10/15/20 scaling at levels 1/6/11."},
+
+    {"entity_name": "Dimension Shift", "entity_type": "other", "change_type": "nerf", "summary": "ARAM Mayhem augment cooldown reduced from 108s to 75s (faster but with lower per-use stats relative to before, per accompanying stat cuts)."},
+    {"entity_name": "Dimension Shift", "entity_type": "other", "change_type": "buff", "summary": "ARAM Mayhem augment Attack Damage range increased from 25-100 to 35-150."},
+    {"entity_name": "Dimension Shift", "entity_type": "other", "change_type": "buff", "summary": "ARAM Mayhem augment Ability Power range increased from 25-100 to 35-150."},
+    {"entity_name": "Dimension Shift", "entity_type": "other", "change_type": "buff", "summary": "ARAM Mayhem augment Health range increased from 200-1000 to 300-1500."},
+    {"entity_name": "Dimension Shift", "entity_type": "other", "change_type": "new", "summary": "ARAM Mayhem augment now deals 1 damage to structures."},
+
+    {"entity_name": "Poro Stampede", "entity_type": "other", "change_type": "buff", "summary": "ARAM Mayhem augment time between poro spawns reduced from 35-20 to 25-15."},
+    {"entity_name": "Poro Stampede", "entity_type": "other", "change_type": "buff", "summary": "ARAM Mayhem augment base damage increased from 50-100 to 100-200."},
+
+    {"entity_name": "Squishy Slappy Grab", "entity_type": "other", "change_type": "buff", "summary": "ARAM Mayhem augment shield per slappee increased from 25-75 to 35-150."},
+
+    {"entity_name": "Overkill", "entity_type": "other", "change_type": "buff", "summary": "ARAM Mayhem augment now executes a target if accumulated damage would kill it."},
+
+    {"entity_name": "Dropkick", "entity_type": "other", "change_type": "nerf", "summary": "ARAM Mayhem augment base value reduced from 5% to 4%."},
+    {"entity_name": "Dropkick", "entity_type": "other", "change_type": "buff", "summary": "ARAM Mayhem augment base attack damage scaling increased from 0.035% to 0.055%."},
+    {"entity_name": "Dropkick", "entity_type": "other", "change_type": "nerf", "summary": "ARAM Mayhem augment bonus health scaling reduced from 0.002% to 0.0001%."},
+
+    {"entity_name": "Tooth Fairy", "entity_type": "other", "change_type": "nerf", "summary": "ARAM Mayhem augment penetration per tooth reduced from 4 to 3."},
+
+    {"entity_name": "Infernal Conduit", "entity_type": "other", "change_type": "nerf", "summary": "ARAM Mayhem augment no longer reduces cooldowns when affecting non-champions."},
+
+    {"entity_name": "Stackosaurus Rex", "entity_type": "other", "change_type": "nerf", "summary": "ARAM Mayhem augment will no longer affect other augment or item effects."},
+
+    {"entity_name": "Divine Domain", "entity_type": "other", "change_type": "bug_fix", "summary": "Fixed a bug where the ARAM Mayhem augment could grant infinite Attack Range."},
+    {"entity_name": "Combusting Interest", "entity_type": "other", "change_type": "bug_fix", "summary": "Fixed a bug where the ARAM Mayhem augment did not grant gold from champions' damage-over-time effects like Darius, Teemo, and Twitch."},
+    {"entity_name": "Smolder", "entity_type": "champion", "change_type": "bug_fix", "summary": "Fixed a bug where Smolder could be offered the Combusting Interest augment in ARAM Mayhem."},
+    {"entity_name": "It's Go Time", "entity_type": "other", "change_type": "bug_fix", "summary": "Fixed a bug where the ARAM Mayhem augment did not correctly grant bonus move speed with Master Yi's E, Ashe's Q, and Twitch's Q."},
+    {"entity_name": "High Roller", "entity_type": "other", "change_type": "bug_fix", "summary": "Fixed a bug where the ARAM Mayhem augment sometimes failed to drop an Anvil when a unit died."},
+    {"entity_name": "Drop Bear", "entity_type": "other", "change_type": "bug_fix", "summary": "Fixed a bug where the ARAM Mayhem augment's Drop Bear could sometimes die immediately after spawning."},
+    {"entity_name": "Shark Tempest / SnowBomb", "entity_type": "other", "change_type": "bug_fix", "summary": "Fixed a bug in ARAM Mayhem where players could still get another active summoner spell after choosing Shark Tempest and SnowBomb."},
+    {"entity_name": "Pursuit of Haste", "entity_type": "other", "change_type": "bug_fix", "summary": "Fixed a bug where the ARAM Mayhem augment Pursuit of Haste was offered to Yasuo E."},
+
+    {"entity_name": "Ambessa", "entity_type": "champion", "change_type": "nerf", "summary": "Arena: Q1 base attack damage ratio reduced from 60% to 45%."},
+    {"entity_name": "Ambessa", "entity_type": "champion", "change_type": "nerf", "summary": "Arena: Q2 base attack damage ratio reduced from 90% to 70%."},
+
+    {"entity_name": "Gragas", "entity_type": "champion", "change_type": "buff", "summary": "Arena: passive heal ratio increased from 3.5% to 5.5%."},
+    {"entity_name": "Gragas", "entity_type": "champion", "change_type": "buff", "summary": "Arena: E base damage increased from 80-220 to 80-260."},
+
+    {"entity_name": "Heimerdinger", "entity_type": "champion", "change_type": "buff", "summary": "Arena: Q beam base damage increased from 30-90 to 40-120."},
+    {"entity_name": "Heimerdinger", "entity_type": "champion", "change_type": "buff", "summary": "Arena: Q beam Ability Power ratio increased from 45% to 55%."},
+
+    {"entity_name": "Illaoi", "entity_type": "champion", "change_type": "buff", "summary": "Arena: Q passive tentacle damage amplification increased from 4%-20% to 10%-30%."},
+
+    {"entity_name": "Kled", "entity_type": "champion", "change_type": "buff", "summary": "Arena: passive mount cooldown reduced from 15 to 12."},
+    {"entity_name": "Kled", "entity_type": "champion", "change_type": "bug_fix", "summary": "Arena: fixed a bug so Power Flowers now correctly grants courage."},
+
+    {"entity_name": "Locke", "entity_type": "champion", "change_type": "buff", "summary": "Arena: Q cooldown reduced from 10-6 to 8.5-4.5."},
+    {"entity_name": "Locke", "entity_type": "champion", "change_type": "buff", "summary": "Arena: E cooldown reduced from 10 to 8."},
+    {"entity_name": "Locke", "entity_type": "champion", "change_type": "buff", "summary": "Arena: E2 Ability Power ratio increased from 0.4 to 0.65."},
+    {"entity_name": "Locke", "entity_type": "champion", "change_type": "buff", "summary": "Arena: R cooldown reduced from 120-80 to 90-60."},
+
+    {"entity_name": "Quinn", "entity_type": "champion", "change_type": "buff", "summary": "Arena: passive Harrier cooldown reduced from 7s-2.56s to 5s-1.83s."},
+    {"entity_name": "Quinn", "entity_type": "champion", "change_type": "buff", "summary": "Arena: E cooldown reduced from 12-8 to 10-6."},
+
+    {"entity_name": "Rakan", "entity_type": "champion", "change_type": "buff", "summary": "Arena: Q base damage increased from 70-250 to 95-275."},
+
+    {"entity_name": "Samira", "entity_type": "champion", "change_type": "buff", "summary": "Arena: R damage increased from 10/20/30 to 15/30/45."},
+
+    {"entity_name": "Skarner", "entity_type": "champion", "change_type": "buff", "summary": "Arena: E move distance post-grab increased from 675 to 1000."},
+    {"entity_name": "Skarner", "entity_type": "champion", "change_type": "buff", "summary": "Arena: R base damage increased from 250-450 to 350-550."},
+    {"entity_name": "Skarner", "entity_type": "champion", "change_type": "buff", "summary": "Arena: move speed while R is active increased from 40% to 60%."},
+
+    {"entity_name": "Swain", "entity_type": "champion", "change_type": "buff", "summary": "Arena: R demonic power generated per second while draining increased from 20 to 25."},
+    {"entity_name": "Swain", "entity_type": "champion", "change_type": "nerf", "summary": "Arena: demonic power lost increased from 10 to 15."},
+    {"entity_name": "Swain", "entity_type": "champion", "change_type": "nerf", "summary": "Arena: amped demonic power lost after 5s increased from 15 to 20."},
+
+    {"entity_name": "Yorick", "entity_type": "champion", "change_type": "buff", "summary": "Arena: Q missing health ratio increased from 3%-7% to 6%-10%."},
+    {"entity_name": "Yorick", "entity_type": "champion", "change_type": "buff", "summary": "Arena: R Maiden health modifier increased from 70% to 100%."},
+
+    {"entity_name": "Zoe", "entity_type": "champion", "change_type": "buff", "summary": "Arena: passive Ability Power ratio increased from 35% to 40%."},
+    {"entity_name": "Zoe", "entity_type": "champion", "change_type": "buff", "summary": "Arena: Q Ability Power ratio increased from 0.6-1.5 to 0.7-1.75."},
+    {"entity_name": "Zoe", "entity_type": "champion", "change_type": "buff", "summary": "Arena: W magic damage per bolt increased from 15-55 to 20-80."},
+    {"entity_name": "Zoe", "entity_type": "champion", "change_type": "buff", "summary": "Arena: R cooldown reduced from 11-5 to 8-2."},
+
+    {"entity_name": "Wildfire", "entity_type": "other", "change_type": "new", "summary": "Arena: Wildfire now counts as a burn effect for item interactions."},
+
+    {"entity_name": "Phantom Dancer", "entity_type": "item", "change_type": "adjustment", "summary": "Arena: move speed changed from 8%-10% (scaling) to a flat 10%."},
+    {"entity_name": "Phantom Dancer", "entity_type": "item", "change_type": "buff", "summary": "Arena: attack speed increased from 60% to 65%."},
+
+    {"entity_name": "Kraken Slayer", "entity_type": "item", "change_type": "buff", "summary": "Arena: attack speed increased from 35% to 40%."},
+    {"entity_name": "Navori Flickerblade", "entity_type": "item", "change_type": "buff", "summary": "Arena: attack speed increased from 35% to 40%."},
+    {"entity_name": "Rapid Firecannon", "entity_type": "item", "change_type": "buff", "summary": "Arena: attack speed increased from 30% to 35%."},
+
+    {"entity_name": "Divine Intervention", "entity_type": "other", "change_type": "buff", "summary": "Arena augment cooldown now reduced by 2 seconds when you trigger Hexbolt."},
+    {"entity_name": "Divine Intervention", "entity_type": "other", "change_type": "buff", "summary": "Arena augment's max level capstone now triggers even if already invulnerable from Divine Intervention."},
+    {"entity_name": "Divine Intervention", "entity_type": "other", "change_type": "adjustment", "summary": "Arena augment now properly works with Quantum Computing, multicasting with a 0.25s delay for a max invulnerability duration of 3.5 seconds."},
+
+    {"entity_name": "Jeweled Gauntlet and Vulnerability", "entity_type": "other", "change_type": "bug_fix", "summary": "Fixed an issue in Arena where having both augments would sometimes prevent a spell from critting."},
+    {"entity_name": "Jeweled Gauntlet and Vulnerability", "entity_type": "other", "change_type": "nerf", "summary": "Arena: Double Tap interaction now has a 5 second per-spell cooldown."},
+    {"entity_name": "Jeweled Gauntlet and Vulnerability", "entity_type": "other", "change_type": "nerf", "summary": "Arena: Critical Rhythm interaction now has a 4 second per-spell cooldown."},
+
+    {"entity_name": "Twin Fire", "entity_type": "other", "change_type": "removed", "summary": "Arena augment Twin Fire has been disabled."},
+
+    {"entity_name": "Upgrade: Collector", "entity_type": "other", "change_type": "nerf", "summary": "Arena augment execute threshold at level 1 reduced from 0.75 (16.25%) to 0.5 (12.5%)."},
+    {"entity_name": "Upgrade: Collector", "entity_type": "other", "change_type": "nerf", "summary": "Arena augment execute threshold at level 2 reduced from 1.25 (23.75%) to 1 (20%)."},
+
+    {"entity_name": "Buff Bar", "entity_type": "system", "change_type": "adjustment", "summary": "Cleaned up the buff bar by trimming redundant buffs, moving most timed item buffs into item inventory slots, reducing clutter from low-impact system/map/item effects, and removing display of very short-duration debuffs (~0.25s)."},
+
+    {"entity_name": "Caitlyn", "entity_type": "champion", "change_type": "bug_fix", "summary": "Fixed a bug where Caitlyn's Headshot may fail to fire while in brush."},
+
+    {"entity_name": "Remake Vote", "entity_type": "system", "change_type": "adjustment", "summary": "Remake votes now begin automatically when eligible instead of requiring a player to type /remake, with chat context explaining who triggered it and why."},
+
+    {"entity_name": "Deafen/Mute", "entity_type": "system", "change_type": "adjustment", "summary": "Deafen and self-mute can now only be toggled once every 60 seconds to prevent spam and disruptive one-way communication."},
+
+    {"entity_name": "T1 Galio", "entity_type": "cosmetic", "change_type": "cosmetic_release", "champion": "Galio", "price": "1350 RP (individual); also in Signature Bundle and Worlds Winner Megabundle", "summary": "New T1 Worlds Winner skin for Galio released, including signature icon/border, ward skin, Elite chroma, and an exclusive emote as part of its Signature Bundle."},
+    {"entity_name": "T1 Xin Zhao", "entity_type": "cosmetic", "change_type": "cosmetic_release", "champion": "Xin Zhao", "price": "1350 RP (individual); also in Signature Bundle and Worlds Winner Megabundle", "summary": "New T1 Worlds Winner skin for Xin Zhao released, including signature icon/border, ward skin, Elite chroma, and an exclusive emote as part of its Signature Bundle."},
+    {"entity_name": "T1 Seraphine", "entity_type": "cosmetic", "change_type": "cosmetic_release", "champion": "Seraphine", "price": "1350 RP (individual); also in Signature Bundle and Worlds Winner Megabundle", "summary": "New T1 Worlds Winner skin for Seraphine released, including signature icon/border, ward skin, Elite chroma, and an exclusive emote as part of its Signature Bundle."},
+    {"entity_name": "T1 Ambessa", "entity_type": "cosmetic", "change_type": "cosmetic_release", "champion": "Ambessa", "price": "1350 RP (individual); also in Signature Bundle and Worlds Winner Megabundle", "summary": "New T1 Worlds Winner skin for Ambessa released, including signature icon/border, ward skin, Elite chroma, and an exclusive emote as part of its Signature Bundle."},
+    {"entity_name": "T1 Yunara", "entity_type": "cosmetic", "change_type": "cosmetic_release", "champion": "Yunara", "price": "1350 RP (individual); also in Signature Bundle and Worlds Winner Megabundle", "summary": "New T1 Worlds Winner skin for Yunara released, including signature icon/border, ward skin, Elite chroma, and an exclusive emote as part of its Signature Bundle."},
+    {"entity_name": "MVP T1 Miss Fortune", "entity_type": "cosmetic", "change_type": "cosmetic_release", "champion": "Miss Fortune", "price": "1820 RP (individual); also in Signature Bundle and Worlds Winner Megabundle", "summary": "New MVP T1 Worlds Winner skin for Miss Fortune released; after leaving the Shop it will enter the Mythic Shop pool in 2027 priced at 200 Mythic Essence (without signature icon/border)."},
+    {"entity_name": "Victorious Rengar", "entity_type": "cosmetic", "change_type": "cosmetic_release", "champion": "Rengar", "price": null, "summary": "New Victorious Rengar skin released as this season's ranked reward skin."},
+    {"entity_name": "Worlds Winner Megabundle", "entity_type": "cosmetic", "change_type": "cosmetic_release", "champion": null, "price": null, "summary": "New bundle combining all five T1 Signature Bundles plus exclusive Golden Team Icon, T1 2025 Worlds Winner Lobby Banner, and the \"Three-peat, 1 Dynasty\" title; available for two patches, leaving at the start of 26.16."},
+    {"entity_name": "Together as 1 Nexus Finisher", "entity_type": "cosmetic", "change_type": "cosmetic_release", "champion": null, "price": "250 Mythic Essence", "summary": "New Nexus Finisher added to the Mythic Shop's Featured section for two patches, leaving at the start of 26.16."},
+    {"entity_name": "T1 Galio Chroma", "entity_type": "cosmetic", "change_type": "chroma_release", "champion": "Galio", "price": null, "summary": "New standard chroma released for T1 Galio, individually purchasable (Ruby chroma is bundle-exclusive)."},
+    {"entity_name": "T1 Xin Zhao Chroma", "entity_type": "cosmetic", "change_type": "chroma_release", "champion": "Xin Zhao", "price": null, "summary": "New standard chroma released for T1 Xin Zhao, individually purchasable (Ruby chroma is bundle-exclusive)."},
+    {"entity_name": "T1 Seraphine Chroma", "entity_type": "cosmetic", "change_type": "chroma_release", "champion": "Seraphine", "price": null, "summary": "New standard chroma released for T1 Seraphine, individually purchasable (Ruby chroma is bundle-exclusive)."},
+    {"entity_name": "T1 Ambessa Chroma", "entity_type": "cosmetic", "change_type": "chroma_release", "champion": "Ambessa", "price": null, "summary": "New standard chroma released for T1 Ambessa, individually purchasable (Ruby chroma is bundle-exclusive)."},
+    {"entity_name": "T1 Yunara Chroma", "entity_type": "cosmetic", "change_type": "chroma_release", "champion": "Yunara", "price": null, "summary": "New standard chroma released for T1 Yunara, individually purchasable (Ruby chroma is bundle-exclusive)."},
+    {"entity_name": "MVP T1 Miss Fortune Chroma", "entity_type": "cosmetic", "change_type": "chroma_release", "champion": "Miss Fortune", "price": null, "summary": "New standard chroma released for MVP T1 Miss Fortune, individually purchasable (Ruby chroma is bundle-exclusive)."}
+  ]
+}

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "fetch:icons": "node scripts/fetch-champion-icons.mjs"
   },
   "dependencies": {
     "next": "^16.2.12",

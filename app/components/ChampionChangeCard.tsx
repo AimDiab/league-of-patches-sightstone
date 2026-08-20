@@ -1,4 +1,6 @@
+import Image from "next/image";
 import type { ChampionChanges, ChangeType } from "@/app/types/patch";
+import { getChampionIconSrc } from "@/app/utils/championIcon";
 
 export interface ChampionChangeCardProps {
   championChanges: ChampionChanges;
@@ -31,7 +33,16 @@ export default function ChampionChangeCard({ championChanges }: ChampionChangeCa
 
   return (
     <article className="flex flex-col gap-3 rounded-lg border border-black/[.08] bg-white p-5 dark:border-white/[.145] dark:bg-zinc-900">
-      <h2 className="text-lg font-semibold text-black dark:text-zinc-50">{championName}</h2>
+      <div className="flex items-center gap-2">
+        <Image
+          src={getChampionIconSrc(championName)}
+          alt={championName}
+          width={80}
+          height={80}
+          className="rounded-full"
+        />
+        <h2 className="text-lg font-semibold text-black dark:text-zinc-50">{championName}</h2>
+      </div>
       <ul className="flex flex-col gap-2">
         {changes.map((change, index) => (
           <li key={index} className="flex items-start gap-2 text-sm">

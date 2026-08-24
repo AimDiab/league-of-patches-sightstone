@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ChampionChanges, ChangeType } from "@/app/types/patch";
 import { getChampionIconSrc } from "@/app/utils/championIcon";
+import { CHANGE_TYPE_LABELS } from "@/app/utils/changeType";
 
 export interface ChampionChangeCardProps {
   championChanges: ChampionChanges;
@@ -15,17 +16,6 @@ const CHANGE_TYPE_BADGE_STYLES: Record<ChangeType, string> = {
   removed: "bg-zinc-200 text-zinc-700 dark:bg-zinc-700 dark:text-zinc-300",
   cosmetic_release: "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200",
   chroma_release: "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200",
-};
-
-const CHANGE_TYPE_LABELS: Record<ChangeType, string> = {
-  buff: "Buff",
-  nerf: "Nerf",
-  adjustment: "Adjustment",
-  bug_fix: "Bug Fix",
-  new: "New",
-  removed: "Removed",
-  cosmetic_release: "Cosmetic Release",
-  chroma_release: "Chroma Release",
 };
 
 export default function ChampionChangeCard({ championChanges }: ChampionChangeCardProps) {

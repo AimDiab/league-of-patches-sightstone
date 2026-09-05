@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import SiteHeader from "@/app/components/SiteHeader";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,9 +26,22 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        {/* Runs synchronously during HTML parsing, before first paint: applies the
+            stored theme (or system preference) so there is no flash of wrong theme. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("theme");var d=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d)}catch(e){}})()`,
+          }}
+        />
+      </head>
+      <body className="flex min-h-full flex-col">
+        <SiteHeader />
+        {children}
+      </body>
     </html>
   );
 }
